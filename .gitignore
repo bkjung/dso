@@ -7,4 +7,6 @@ build-*
 *.so
 *.a
 *.so.*
+*.swo
+*.swp
 thirdparty/libzip-1.1.1

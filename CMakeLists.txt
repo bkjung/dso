@@ -29,6 +29,10 @@ set(CMAKE_CXX_FLAGS
 #   "${SSE_FLAGS} -O3 -g -std=c++0x -fno-omit-frame-pointer"
 )
 
+#Added to enable NEON instructions by @bkjung
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mfloat-abi=hard -mfpu=neon")
+
 if (MSVC)
      set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /EHsc")
 endif (MSVC)
